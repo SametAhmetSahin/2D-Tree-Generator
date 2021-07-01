@@ -51,10 +51,10 @@ func _ready():
 		var branch_head_instance = branch_head.instance()
 		var branch_position = Vector2()
 		# A branch head's position is randomized, the max_branch_spread is the reference value, the branch's position will be in that range relative to the trunk
-		branch_position.x = rand_range(global_position.x + max_branch_spread.x, global_position.x - max_branch_spread.x)
-		branch_position.y = rand_range(global_position.y + max_branch_spread.y, global_position.y - max_branch_spread.y)
+		branch_position.x = rand_range(-max_branch_spread.x, max_branch_spread.x)
+		branch_position.y = rand_range(-max_branch_spread.y, max_branch_spread.y)
 		
-		branch_head_instance.global_position = branch_position
+		branch_head_instance.position = branch_position
 		branch_head_instance.z_index = i
 
 

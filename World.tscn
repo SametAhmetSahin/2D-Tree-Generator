@@ -9,3 +9,12 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 
 [node name="Tree" parent="." instance=ExtResource( 1 )]
+
+[node name="Tree2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -111.118, -38.0976 )
+
+[node name="Tree3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 202.394, -90.4819 )
+
+[node name="Tree4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 54.9794, 71.9223 )
