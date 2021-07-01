@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="BranchLine" type="Line2D"]
+position = Vector2( 0, -0.148651 )
+z_as_relative = false
+points = PoolVector2Array( 0, 0, 0, 0 )
+default_color = Color( 0.235294, 0.0745098, 0.0156863, 1 )
