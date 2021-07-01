@@ -55,7 +55,6 @@ func _ready():
 		branch_position.y = rand_range(global_position.y + max_branch_spread.y, global_position.y - max_branch_spread.y)
 		
 		branch_head_instance.global_position = branch_position
-		branch_head_instance.tree_position = branch_head_instance.global_position - self.global_position 
 		branch_head_instance.z_index = i
 
 
@@ -65,6 +64,7 @@ func _ready():
 		# A scale is randomized between adjustable values, for variation
 		var branch_head_scale = rand_range(branch_head_scale_range.x, branch_head_scale_range.y)
 		branch_head_instance.scale = Vector2(branch_head_scale, branch_head_scale)
+		branch_head_instance.rotation = randf() * 2
 		add_child(branch_head_instance)
 		
 		# For the branch head's connection to the tree trunk, also known as limbs of the tree.
