@@ -74,7 +74,7 @@ func _ready():
 		# The line gets connected to the trunk
 
 		branch_line_instance.points[1] = branch_head_instance.position
-		branch_line_instance.z_index = i - 2
+		branch_line_instance.z_index = i - 1
 		branch_line_instance.width = rand_range(branch_line_width_range.x, branch_line_width_range.y)
 		branch_line_instance.default_color = Color(rand_range(branch_line_red_color_range.x, branch_line_red_color_range.y)/255, rand_range(branch_line_green_color_range.x, branch_line_green_color_range.y)/255, rand_range(branch_line_blue_color_range.x, branch_line_blue_color_range.y)/255, 1)
 		add_child(branch_line_instance)
