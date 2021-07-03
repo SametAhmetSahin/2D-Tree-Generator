@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/noisegrasstexture.png-51d4f72ffd76f3d91db49cac6c092ef5.stex"
+path="res://.import/noisegrasstexture.png-0036ca23ba4d4eb7d0350bb5592f9506.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://noisegrasstexture.png"
-dest_files=[ "res://.import/noisegrasstexture.png-51d4f72ffd76f3d91db49cac6c092ef5.stex" ]
+source_file="res://res/noisegrasstexture.png"
+dest_files=[ "res://.import/noisegrasstexture.png-0036ca23ba4d4eb7d0350bb5592f9506.stex" ]
 
 [params]
 

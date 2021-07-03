@@ -2,8 +2,8 @@ extends Node2D
 
 export (int, 0, 100) var branch_amount = 3
 
-onready var branch_head = preload("res://BranchHead.tscn")
-onready var branch_line = preload("res://BranchLine.tscn")
+onready var branch_head = preload("res://src/branches/BranchHead.tscn")
+onready var branch_line = preload("res://src/branches/BranchLine.tscn")
 
 # Max spread range of branches
 

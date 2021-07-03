@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://res/noisegrasstexture.png" type="Texture" id=1]
+[ext_resource path="res://src/tree/Tree.tscn" type="PackedScene" id=2]
+
+[node name="World" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+follow_viewport_enable = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+show_behind_parent = true
+margin_left = -395.0
+margin_top = -269.0
+margin_right = 420.0
+margin_bottom = 332.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Trees" type="Node2D" parent="."]
+
+[node name="Tree" parent="Trees" instance=ExtResource( 2 )]
+position = Vector2( -27.3723, 22.653 )
+scale = Vector2( 1.65977, 1.46658 )
+
+[node name="Tree2" parent="Trees" instance=ExtResource( 2 )]
+position = Vector2( -186.465, -97.4706 )
+
+[node name="Tree3" parent="Trees" instance=ExtResource( 2 )]
+position = Vector2( -81.5786, -97.4706 )
+
+[node name="Tree4" parent="Trees" instance=ExtResource( 2 )]
+position = Vector2( 70.9841, -83.6976 )
+
+[node name="Tree5" parent="Trees" instance=ExtResource( 2 )]
+position = Vector2( 200.239, -117.6 )
+
+[node name="Tree6" parent="Trees" instance=ExtResource( 2 )]
+position = Vector2( 158.919, -45.5569 )
+
+[node name="Tree7" parent="Trees" instance=ExtResource( 2 )]
+position = Vector2( 101.708, 83.8056 )
+
+[node name="Tree8" parent="Trees" instance=ExtResource( 2 )]
+position = Vector2( 77.3408, 22.3568 )
+
+[node name="Tree9" parent="Trees" instance=ExtResource( 2 )]
+position = Vector2( -130.314, 68.9731 )
